@@ -1,7 +1,6 @@
 #!/bin/bash
 # FILE: main.sh
-# FILE: Modular main V 1.8 (Clean UI Fix) CORE=6.0
-
+# FILE: Modular main V 1.9 (Clean UI Fix) CORE=6.0
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 MODULES_DIR="$SCRIPT_DIR/modules"
@@ -124,6 +123,7 @@ while true; do
             echo -e "${GRAY}  Tekan 'x' untuk kembali ke menu utama${NC}\n"
             
             vids=(); idx=1
+            # Menggunakan process substitution untuk membaca file dengan aman
             while IFS= read -r -d $'\0' file; do 
                 vids+=("$file")
                 echo -e " [$idx] ${WHITE}$(basename "$file")${NC}"
@@ -166,7 +166,6 @@ while true; do
         echo -e "${RED}Terima kasih telah menggunakan Intisari Clipper.${NC}"
         sleep 2
         
-        # PERBAIKAN: Gunakan "$HOME" bukan "$Home"
         cd "$HOME"
         clear
         echo -e "${GREEN}Anda sekarang berada di menu utama Termux.${NC}"
