@@ -13,8 +13,8 @@ MOD_UTILS_VER="1.1"          # Utils
 MOD_VIRAL_VER="1.9"          # Viral Downloader
 
 # --- KONFIGURASI SERVER ---
-REPO_USER="faldi-intisariClipper" 
-REPO_NAME="Intisari-Auto-CutBeta"
+REPO_USER="intisariapps" 
+REPO_NAME="Intisari-Auto-Cut"
 BRANCH="main"
 
 LINK_MANIFEST="https://raw.githubusercontent.com/$REPO_USER/$REPO_NAME/$BRANCH/manifest.txt"
